@@ -1,0 +1,89 @@
+.loading-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.loading-container section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+.loading-card-wrapper {
+    height: 20rem;
+    width: 240px;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .loading-card {
+    width: 100%;
+    background: linear-gradient(145deg, #3a3a3a, #1f1f1f);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    user-select: none;
+  }
+  
+  .loading-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #555 25%, #777 50%,#555 75%);
+    background-size: 400% 100%;
+    animation: shimmer 1.8s infinite ease-in-out;
+  }
+  
+  .loading-title {
+    width: 60%;
+    height: 24px;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #555 25%, #777 50%, #555 75%);
+    background-size: 400% 100%;
+    animation: shimmer 1.8s infinite ease-in-out;
+  }
+  
+  .loading-subtitle {
+    width: 40%;
+    height: 16px;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #555 25%, #777 50%, #555 75%);
+    background-size: 400% 100%;
+    animation: shimmer 1.8s infinite ease-in-out;
+  }
+  
+  .loading-stats {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .loading-stat-line {
+    width: 28%;
+    height: 12px;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #555 25%, #777 50%, #555 75%);
+    background-size: 400% 100%;
+    animation: shimmer 1.8s infinite ease-in-out;
+  }
+  
+  /* Shimmer animation */
+  @keyframes shimmer {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+  
