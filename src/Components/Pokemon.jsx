@@ -13,7 +13,7 @@ const Pokemon = () => {
 
 
     const apiCall = async ()=>{
-        const API = "https://pokeapi.co/api/v2/pokemon?limit=24";
+        const API = "https://pokeapi.co/api/v2/pokemon?limit=424";
         try{
             const res = await fetch(API);
             const data = await res.json();
