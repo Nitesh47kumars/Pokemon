@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import PokemonCard from './PokemonCard';
-import "./Pokemon.css"
-import "./Media.css"
 import Loading from './Loading';
+import "./Pokemon.css"
+import "./Loading.css"
+import "./Media.css"
 
 const Pokemon = () => {
     const [pokemon,setPokemon] = useState([]);
@@ -12,7 +13,7 @@ const Pokemon = () => {
 
 
     const apiCall = async ()=>{
-        const API = "https://pokeapi.co/api/v2/pokemon?limit=424";
+        const API = "https://pokeapi.co/api/v2/pokemon?limit=24";
         try{
             const res = await fetch(API);
             const data = await res.json();

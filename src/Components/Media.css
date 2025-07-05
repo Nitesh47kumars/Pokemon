@@ -46,4 +46,24 @@
         font-weight: 700;
         color: white;
     }
+
+                /* Loading */
+
+    .loading-card-wrapper{
+        height: 13rem;
+        width: 140px;
+        margin: 0.5rem;
+    }
+    .loading-card{
+        width: 100%;
+        padding: 10px;
+        gap: 13px;
+    }
+    .loading-image{
+        height: 50px;
+        width: 50px;
+    }
+    .loading-title{
+        height: 18px;
+    }
 }
